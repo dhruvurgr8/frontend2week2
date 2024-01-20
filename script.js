@@ -23,21 +23,19 @@ function PrintDeveloper() {
 }
 
 function addData() {
-  let newArr = arr.concat(fourthEmployee);
-  console.log(newArr);
+  arr = arr.concat(fourthEmployee);
+  console.log(arr);
 }
 
 function removeAdmin() {
-  arr.forEach((employees) => {
-    if (employees.profession != "admin") {
-      console.log(employees);
-    }
-  });
+  arr = arr.filter((item) => item.profession !== "admin");
+
+  console.log(arr);
 }
 
 function concatenateArray() {
-  let combinedArr = arr.concat(arr2);
-  console.log(combinedArr);
+  arr = arr.concat(arr2);
+  console.log(arr);
 }
 
 // Here is an example of how functions work,
